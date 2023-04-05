@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl7k50vjcdutp"]
+
+[ext_resource type="Texture2D" uid="uid://dr3kfgmlfmaph" path="res://Area/UI/header_title_base1.png" id="1_75pns"]
+[ext_resource type="Texture2D" uid="uid://ce2g2d3uhl8ik" path="res://Menu/SubMenu/Summon/gacha_rare_summons_btn1.png" id="2_rta6j"]
+[ext_resource type="Texture2D" uid="uid://bly3ctegc7ako" path="res://Common/UI/Buttons/Textures/right.tres" id="3_27x8s"]
+[ext_resource type="Texture2D" uid="uid://dcmx86738cdsa" path="res://Common/UI/Buttons/Textures/left.tres" id="4_5414s"]
+
+[node name="summon_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 27.0
+offset_right = 421.0
+offset_bottom = 115.0
+texture = ExtResource("1_75pns")
+
+[node name="Summon" type="Button" parent="."]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 642.0
+offset_right = 419.0
+offset_bottom = 730.0
+icon = ExtResource("2_rta6j")
+
+[node name="next" type="Button" parent="."]
+layout_mode = 0
+offset_left = 556.0
+offset_top = 366.0
+offset_right = 616.0
+offset_bottom = 428.0
+icon = ExtResource("3_27x8s")
+
+[node name="previous" type="Button" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 362.0
+offset_right = 90.0
+offset_bottom = 423.0
+icon = ExtResource("4_5414s")

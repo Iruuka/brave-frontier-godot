@@ -8,6 +8,7 @@ func _ready():
 
 func load_scene(scene: String, animation: int = 0):
 	print("Loading sub menu ", scene)
+	print(ResourceLoader)
 	var new_scene = ResourceLoader.load(scene).instantiate()
 	new_scene.position.y = 163
 	
@@ -24,6 +25,6 @@ func load_scene(scene: String, animation: int = 0):
 	#Animate new scene
 	if animation == 0:
 		tween.tween_property(new_scene, "position", Vector2(0, new_scene.position.y), 0.3)
-
+	
 	#Set the new scene
 	current_scene = new_scene

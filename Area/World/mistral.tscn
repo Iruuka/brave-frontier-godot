@@ -100,4 +100,11 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_na8ss")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_afenm")
 text = "Mistral Tower"
 
+[node name="Button7" type="Button" parent="Background"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return"
+
 [connection signal="pressed" from="Background/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Background/Button7" to="." method="_on_button_7_pressed"]

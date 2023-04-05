@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxn03p64yhssr"]
+
+[ext_resource type="Texture2D" uid="uid://bq4vmo6l2s88w" path="res://Menu/SubMenu/shop/items_display/crystal_thum.png" id="1_xd6yj"]
+
+[node name="display_shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="buy_free_gems" type="Button" parent="."]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 257.0
+offset_right = 381.0
+offset_bottom = 367.0
+icon = ExtResource("1_xd6yj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="buy_free_gems"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 77.0
+offset_right = 75.0
+offset_bottom = 102.0
+text = "Free"

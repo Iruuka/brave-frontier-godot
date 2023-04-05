@@ -19,7 +19,7 @@ func set_element(elem: String):
 	paths.append(str(beginPath, elem, "_", 2, ".png"))
 	paths.append(str(beginPath, elem, "_", 3, ".png"))
 	paths.append(str(beginPath, elem, "_", 4, ".png"))
-	
+
 	#Display them
 	$anim1.texture = ResourceLoader.load(paths[0])
 	$anim2.texture = ResourceLoader.load(paths[1])

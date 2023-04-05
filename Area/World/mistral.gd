@@ -49,3 +49,8 @@ func toggleUI(should_hide = false):
 		for btn in get_child(0).get_children():
 			btn.show()
 		header.queue_free()
+
+
+func _on_button_7_pressed():
+	get_node("/root/Game/GameContent").loadScene("res://Menu/main_menu.tscn", true)
+	pass # Replace with function body.

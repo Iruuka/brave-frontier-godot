@@ -9,3 +9,5 @@ func _on_footer_btn_clicked(id:int):
 	match id:
 		1: $MenuContent.load_scene("res://Menu/SubMenu/Home/home.tscn", 1)
 		2: $MenuContent.load_scene("res://Menu/SubMenu/Unit/unit_menu.tscn", 1)
+		4: $MenuContent.load_scene("res://Menu/SubMenu/Shop/display_shop.tscn", 1)
+		5: $MenuContent.load_scene("res://Menu/SubMenu/Summon/summon_menu.tscn", 1)

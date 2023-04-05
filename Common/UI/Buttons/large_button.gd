@@ -15,3 +15,4 @@ func _ready():
 #Emits the signal with the ID. The parent entered the ID so it knows which was clicked
 func _on_pressed():
 	emit_signal("Clicked", id)
+

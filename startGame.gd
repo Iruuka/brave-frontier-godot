@@ -16,6 +16,7 @@ func _on_touch_screen_gui_input(event):
 		if !ActiveAccount.account_is_active():
 			get_node("%GameContent").loadScene("res://Introduction/introduction.tscn", true)
 		else:
+			print(get_node("%GameContent"))
 			get_node("%GameContent").loadScene("res://Menu/main_menu.tscn", true)
 		var tween = create_tween()
 		tween.tween_property($Music, "volume_db", -80.0, 3.0)
